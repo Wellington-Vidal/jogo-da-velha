@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Jogo da Velha</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Wellington Vidal">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="tituloJogo">
+            <h1>Jogo da Velha</h1>
+        </div>
+        <div id="tabuleiro">
+            <div class="linha1">
+                <div class="coluna1">
+                    <button type="button"></button>
+                </div>
+                <div class="coluna2">
+                    <button type="button"></button>
+                </div>
+                <div class="coluna3">
+                    <button type="button"></button>
+                </div>
+            </div>
+            <div class="linha2">
+                <div class="coluna1">
+                    <button type="button"></button>
+                </div>
+                <div class="coluna2">
+                    <button type="button"></button>
+                </div>
+                <div class="coluna3">
+                    <button type="button"></button>
+                </div>
+            </div>
+            <div class="linha3">
+                <div class="coluna1">
+                    <button type="button"></button>
+                </div>
+                <div class="coluna2">
+                    <button type="button"></button>
+                </div>
+                <div class="coluna3">
+                    <button type="button"></button>
+                </div>
+            </div>
+        </div>
+        <div id="placar">
+            <div id="div-btn">Limpar Tabuleiro</div>
+            <table>
+                <caption>Placar</caption>
+                <tr>
+                    <th>Vez</th>
+                    <th>X|O</th>
+                    <th>Jogador</th>
+                    <th>Vitórias</th>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="seta-vez"></div>
+                    </td>
+                    <td>O</td>
+                    <td>Jogador 1</td>
+                    <td id="vitorias-jog1">0</td>
+                </tr>
+                <tr>
+                    <td>
+                        <div class="seta-vez" style="display:none;"></div>
+                    </td>
+                    <td>X</td>
+                    <td>Jogador 2</td>
+                    <td id="vitorias-jog2">0</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Total Partidas</td>
+                    <td id="total-partidas">0</td>
+                </tr>
+            </table>
+        </div>
+        <script src="javascript/app.js"></script>
+    </body>
+</html>
